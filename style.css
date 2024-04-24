@@ -1,0 +1,57 @@
+h1,
+ul,
+li,
+p,
+h2,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header ul {
+  list-style: none;
+}
+
+#nav-bar {
+  margin-left: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#auth {
+  margin-right: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.753);
+}
+
+.header-links a:hover {
+  transition: ease-in-out 0.1s;
+  color: white;
+}
+
+#signup-link {
+  background-color: red;
+}
+
+header {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+}
+
+header h1 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  flex-grow: 1;
+  color: white;
+}
