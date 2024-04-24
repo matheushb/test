@@ -8,6 +8,13 @@ body {
   padding: 0;
 }
 
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 header ul {
   list-style: none;
 }
@@ -32,11 +39,17 @@ header ul {
 
 .header-links a:hover {
   transition: ease-in-out 0.1s;
-  color: white;
+  color: #ffffff;
+}
+
+#log-in {
+  align-self: center;
 }
 
 #signup-link {
-  background-color: red;
+  background-color: rgb(0, 89, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 5%;
 }
 
 header {
@@ -44,7 +57,7 @@ header {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  padding: 1rem;
   display: flex;
   background-color: rgb(0, 0, 0);
 }
@@ -52,6 +65,52 @@ header {
 header h1 {
   font-size: 2rem;
   padding-bottom: 0.5rem;
-  flex-grow: 1;
   color: white;
+}
+
+#jesus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 4rem;
+}
+
+#jesus div {
+  background-color: red;
+  height: 8rem;
+  width: 8rem;
+}
+
+#item1 {
+  background-color: aquamarine;
+}
+
+#item2 {
+  background-color: aqua;
+}
+
+#item3 {
+  background-color: blueviolet;
+}
+#item4 {
+  background-color: chocolate;
+}
+#item5 {
+  background-color: black;
+}
+#item6 {
+  background-color: brown;
+}
+#item7 {
+  background-color: darkgoldenrod;
+}
+#item8 {
+  background-color: yellowgreen;
+}
+
+footer {
+  color: white;
+  padding: 2rem;
+  background-color: rgb(0, 0, 0);
+  grid-row: 3;
 }
